@@ -15,7 +15,7 @@ namespace interpret {
 	};
 
 	template<class T>
-	UnaryShadowExpression<T>::UnaryShadowExpression(Expression<T>* t):
+	UnaryShadowExpression<T>::UnaryShadowExpression(Expression<T>* t) :
 		target(t)
 	{
 	}
@@ -34,4 +34,3 @@ namespace interpret {
 }
 
 #endif // !UNARY_SHADOW_EXPRESSION_H
-

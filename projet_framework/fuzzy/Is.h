@@ -4,6 +4,8 @@
 namespace fuzzy {
 	template <class T>
 	class Is : public interpret::UnaryExpression<T> {
+	public: 
+		virtual ~Is() {};
 	};
 }
 #endif // !IS_H

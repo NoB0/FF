@@ -4,6 +4,9 @@
 namespace fuzzy {
 	template <class T>
 	class Or : public interpret::BinaryExpression<T> {
+	public:
+		virtual ~Or() {};
+
 	};
 }
 

@@ -1,7 +1,7 @@
 #ifndef MAMDANIDEFUZZ_H
 #define MAMDANIDEFUZZ_H
 #include "Evaluator.h"
-#include "../interpret/BinaryExpression.h"
+#include "..\interpret\BinaryExpressionModel.h"
 
 namespace fuzzy {
 	template <class T>
@@ -11,6 +11,7 @@ namespace fuzzy {
 		virtual T evaluate(interpret::Expression<T>*, interpret::Expression<T>*) const;
 		virtual Shape buildShape(interpret::Expression<T>*, interpret::Expression<T>*);
 		virtual T defuzz(Shape) const = 0;
+		~MamdaniDefuzz() {};
 
 	private:
 		T min, max, step;

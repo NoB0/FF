@@ -1,0 +1,4 @@
+﻿  projet_framework.cpp
+d:\ensisa\2a\s9\mercurial\projet_framework\projet_framework\interpret\binaryexpressionmodel.h(32): warning C4715: 'interpret::BinaryExpressionModel<int>::evaluate' : les chemins de contrôle ne retournent pas tous une valeur
+d:\ensisa\2a\s9\mercurial\projet_framework\projet_framework\interpret\binaryexpressionmodel.h(38): warning C4715: 'interpret::BinaryExpressionModel<int>::evaluate' : les chemins de contrôle ne retournent pas tous une valeur
+  projet_framework.vcxproj -> D:\ENSISA\2A\S9\Mercurial\projet_framework\Debug\projet_framework.exe

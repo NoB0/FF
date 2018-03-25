@@ -7,6 +7,8 @@ namespace fuzzy {
 	class NotMinus1 : public Not<T> {
 	public:
 		virtual T evaluate(interpret::Expression<T>*) const;
+		virtual ~NotMinus1() {};
+
 	};
 
 	template<class T>

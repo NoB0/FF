@@ -14,7 +14,7 @@ namespace interpret {
 		virtual Expression<T>* newUnary(UnaryExpression<T>*, Expression<T>*) const;
 		virtual Expression<T>* newBinary(BinaryExpression<T>*, Expression<T>*, Expression<T>*) const;
 	private:
-		 std::set<Expression<T>*> memory;
+		std::set<Expression<T>*> memory;
 	};
 
 	template<class T>
@@ -34,7 +34,7 @@ namespace interpret {
 	template<class T>
 	Expression<T>* ExpressionFactory<T>::newUnary(UnaryExpression<T>* ope, Expression<T>* l) const
 	{
-		return hold(new UnaryExpressionModel (ope, l);
+		return hold(new UnaryExpressionModel(ope, l);
 	}
 	template<class T>
 	Expression<T>* ExpressionFactory<T>::newBinary(BinaryExpression<T>* ope, Expression<T>* l, Expression<T>* r) const
@@ -44,4 +44,4 @@ namespace interpret {
 
 }
 
-#endif // !EXPRESSIONFACTORY_H
+#endif 

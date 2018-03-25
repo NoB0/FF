@@ -12,6 +12,8 @@ namespace interpret {
 
 		virtual T evaluate() const;
 		virtual void setValue(const T);
+		virtual ~ValueModel() {};
+
 	private: 
 		T value;
 	};

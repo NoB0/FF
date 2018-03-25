@@ -7,6 +7,7 @@ namespace fuzzy {
 	class AggMax : public Agg<T> {
 	public:
 		virtual T evaluate(interpret::Expression<T>*, interpret::Expression<T>*) const;
+		virtual ~AggMax() {};
 	};
 	template<class T>
 	T AggMax<T>::evaluate(interpret::Expression<T>* l, interpret::Expression<T>* r) const

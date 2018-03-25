@@ -9,9 +9,10 @@ namespace interpret {
 	class UnaryExpressionModel : public Expression<T>, public UnaryExpression<T> {
 	public:
 		UnaryExpressionModel(Expression<T>*, UnaryExpression<T>*);
-
 		virtual T evaluate() const;
 		virtual T evaluate(Expression<T>*);
+		virtual ~UnaryExpressionModel() {};
+
 	private:
 		Expression<T>* operand;
 		UnaryExpression<T>* ope;

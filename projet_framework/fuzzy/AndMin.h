@@ -7,6 +7,8 @@ namespace fuzzy {
 	class AndMin : public And<T> {
 	public:
 		virtual T evaluate(interpret::Expression<T>*, interpret::Expression<T>*) const;
+		virtual ~AndMin() {};
+
 	};
 	template<class T>
 	T AndMin<T>::evaluate(interpret::Expression<T>*l, interpret::Expression<T>*r) const

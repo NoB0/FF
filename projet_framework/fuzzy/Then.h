@@ -4,6 +4,9 @@
 namespace fuzzy {
 	template <class T>
 	class Then : public interpret::BinaryExpression<T> {
+	public:
+		virtual ~Then() {};
+
 	};
 }
 

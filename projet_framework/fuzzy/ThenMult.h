@@ -7,6 +7,8 @@ namespace fuzzy {
 	class ThenMult : public Then<T> {
 	public:
 		virtual T evaluate(interpret::Expression<T>*, interpret::Expression<T>*) const;
+		virtual ~ThenMult() {};
+
 	};
 
 	template<class T>

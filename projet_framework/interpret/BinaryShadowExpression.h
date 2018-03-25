@@ -14,7 +14,7 @@ namespace interpret {
 		UnaryExpression<T>* target;
 	};
 	template<class T>
-	BinaryShadowExpression<T>::BinaryShadowExpression(Expression<T>* t):
+	BinaryShadowExpression<T>::BinaryShadowExpression(Expression<T>* t) :
 		target(t)
 	{
 	}

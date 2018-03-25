@@ -7,6 +7,8 @@ namespace fuzzy {
 	class ThenMin : public Then<T> {
 	public:
 		virtual T evaluate(interpret::Expression<T>*, interpret::Expression<T>*) const;
+		virtual ~ThenMin() {};
+
 	};
 
 	template<class T>

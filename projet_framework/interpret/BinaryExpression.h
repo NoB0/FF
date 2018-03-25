@@ -8,6 +8,7 @@ namespace interpret {
 	class BinaryExpression {
 	public:
 		virtual T evaluate(Expression<T>*, Expression<T>*) const = 0;
+		virtual ~BinaryExpression() {};
 	};
 }
 

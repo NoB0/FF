@@ -6,6 +6,7 @@ namespace fuzzy {
 	class AndMult : public And<T> {
 	public:
 		virtual T evaluate(interpret::Expression<T>*, interpret::Expression<T>*) const;
+		virtual ~AndMult() {};
 	};
 
 	template<class T>

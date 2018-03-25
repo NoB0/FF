@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -175,13 +175,16 @@
     <ClInclude Include="interpret\BinaryShadowExpression.h" />
     <ClInclude Include="interpret\Expression.h" />
     <ClInclude Include="interpret\ExpressionFactory.h" />
-    <ClInclude Include="interpret\FuzzyFactory.h" />
     <ClInclude Include="interpret\UnaryExpression.h" />
     <ClInclude Include="interpret\UnaryExpressionModel.h" />
     <ClInclude Include="interpret\UnaryShadowExpression.h" />
     <ClInclude Include="interpret\ValueModel.h" />
+    <ClInclude Include="IsTrapeze.h" />
+    <ClInclude Include="IsTrapeze2.h" />
+    <ClInclude Include="FuzzyFactory.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Trapeze3.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="projet_framework.cpp" />

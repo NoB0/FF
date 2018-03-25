@@ -8,6 +8,7 @@ namespace fuzzy {
 	class OrMax : public Or<T> {
 	public:
 		virtual T evaluate(interpret::Expression<T>*, interpret::Expression<T>*) const;
+		virtual ~OrMax() {};
 	};
 
 	template<class T>

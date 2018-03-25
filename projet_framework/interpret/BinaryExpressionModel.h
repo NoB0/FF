@@ -12,6 +12,7 @@ namespace interpret {
 
 		virtual T evaluate() const;
 		virtual T evaluate(Expression<T>*, Expression<T>*) const;
+		virtual ~BinaryExpressionModel() {};
 	private:
 		Expression<T>* left;
 		Expression<T>* right;
@@ -25,9 +26,9 @@ namespace interpret {
 	}
 
 	template<class T>
-	T BinaryExpressionModel<T>::evaluate() const
+	T BinaryExpressionModel<T>::evaluate() const  /////// ajouter throw exception null
 	{
-		if (left != nullptr && right != nullptr)
+		if (left != nullptr && right != nullptr)  
 			return evaluate(left, right);
 	}
 	template<class T>
