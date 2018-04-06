@@ -1,6 +1,8 @@
 #ifndef AGGMAX_H
 #define AGGMAX_H
+
 #include "Agg.h"
+#include "../interpret/Expression.h"
 
 namespace fuzzy {
 	template <class T>

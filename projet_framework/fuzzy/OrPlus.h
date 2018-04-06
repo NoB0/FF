@@ -1,6 +1,9 @@
 #ifndef ORPLUS_H
 #define ORPLUS_H
 
+#include "../interpret/Expression.h"
+#include "Or.h"
+
 namespace fuzzy {
 	template <class T>
 	class OrPlus : public Or<T> {

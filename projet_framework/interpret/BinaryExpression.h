@@ -7,8 +7,11 @@ namespace interpret {
 	template <class T>
 	class BinaryExpression {
 	public:
-		virtual T evaluate(Expression<T>*, Expression<T>*) const = 0;
+		BinaryExpression() {};
 		virtual ~BinaryExpression() {};
+
+		virtual T evaluate(Expression<T>*, Expression<T>*) const = 0;
+
 	};
 }
 

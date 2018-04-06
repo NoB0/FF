@@ -1,5 +1,7 @@
 #ifndef NOTMINUS1_H
 #define NOTMINUS1_H
+
+#include "../interpret/Expression.h"
 #include "Not.h"
 
 namespace fuzzy {

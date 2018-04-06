@@ -1,6 +1,9 @@
 #ifndef ANDMULT_H
 #define ANDMULT_H
 
+#include "../interpret/Expression.h"
+#include "And.h"
+
 namespace fuzzy {
 	template <class T>
 	class AndMult : public And<T> {

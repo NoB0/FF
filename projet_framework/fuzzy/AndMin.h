@@ -1,5 +1,7 @@
 #ifndef ANDMIN_H
 #define ANDMIN_H
+
+#include "../interpret/Expression.h"
 #include "And.h"
 
 namespace fuzzy {

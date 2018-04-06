@@ -1,6 +1,7 @@
 #ifndef ORMAX_H
 #define ORMAX_H
 
+#include "../interpret/Expression.h"
 #include "Or.h"
 
 namespace fuzzy {

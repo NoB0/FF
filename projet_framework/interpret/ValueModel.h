@@ -12,6 +12,7 @@ namespace interpret {
 
 		virtual T evaluate() const;
 		virtual void setValue(const T);
+		virtual T getValue() const;
 		virtual ~ValueModel() {};
 
 	private: 
@@ -34,6 +35,11 @@ namespace interpret {
 	void ValueModel<T>::setValue(const T v)
 	{
 		value = v;
+	}
+	template<class T>
+	T ValueModel<T>::getValue() const
+	{
+		return value;
 	}
 }
 
