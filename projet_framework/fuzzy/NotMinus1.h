@@ -16,7 +16,8 @@ namespace fuzzy {
 	template<class T>
 	T NotMinus1<T>::evaluate(interpret::Expression<T>* e) const
 	{
-		return 1 - e->evaluate();
+		T v = e->evaluate();
+		return 1 - v;
 	}
 }
 #endif // !NOTMINUS1_H

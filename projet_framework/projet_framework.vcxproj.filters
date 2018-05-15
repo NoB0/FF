@@ -126,6 +126,21 @@
     <ClInclude Include="interpret\NullException.h">
       <Filter>Fichiers d%27en-tête\interpret</Filter>
     </ClInclude>
+    <ClInclude Include="interpret\NaryExpression.h">
+      <Filter>Fichiers d%27en-tête\interpret</Filter>
+    </ClInclude>
+    <ClInclude Include="interpret\NaryExpressionModel.h">
+      <Filter>Fichiers d%27en-tête\interpret</Filter>
+    </ClInclude>
+    <ClInclude Include="interpret\NaryShadowExpression.h">
+      <Filter>Fichiers d%27en-tête\interpret</Filter>
+    </ClInclude>
+    <ClInclude Include="fuzzy\SugenoDefuzz.h">
+      <Filter>Fichiers d%27en-tête\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="fuzzy\SugenoThen.h">
+      <Filter>Fichiers d%27en-tête\fuzzy</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

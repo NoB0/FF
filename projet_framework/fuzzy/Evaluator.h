@@ -22,11 +22,12 @@ namespace fuzzy {
 
 		for (T i = min; i <= max; i += step)
 		{
+			interpret::ValueModel<T>* temp = var;
+			temp->setValue(i);
 			x.push_back(i);
-			var->setValue(i);
 			y.push_back(func->evaluate());
 			
-			std::cout << std::endl << "y shape " << func->evaluate();
+			//std::cout << std::endl << "y shape " << func->evaluate();
 		}
 
 		return Shape(x, y);

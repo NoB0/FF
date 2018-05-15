@@ -96,7 +96,7 @@ namespace interpret {
 	template<class T>
 	Expression<T>* FuzzyFactory<T>::newDefuzz(Expression<T>* l, Expression<T>* r, const T& min, const T& max, const T& step)
 	{
-		fuzzy::MamdaniDefuzz<T>* m = static_cast<fuzzy::MamdaniDefuzz<T>*> (mamdanidefuzz->getTarget());
+		fuzzy::MamdaniDefuzz<T>* m = (fuzzy::MamdaniDefuzz<T>*) (mamdanidefuzz->getTarget());
 		m->setMin(min);
 		m->setMax(max);
 		m->setStep(step);

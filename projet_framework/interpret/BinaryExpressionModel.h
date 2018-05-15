@@ -11,6 +11,7 @@ namespace interpret {
 	public :
 		BinaryExpressionModel(Expression<T>*, Expression<T>*, BinaryExpression<T>*);
 
+		virtual BinaryExpression<T>* getOp() const;
 		virtual T evaluate() const;
 		virtual T evaluate(Expression<T>*, Expression<T>*) const;
 		virtual ~BinaryExpressionModel() {};
@@ -24,6 +25,12 @@ namespace interpret {
 	BinaryExpressionModel<T>::BinaryExpressionModel(Expression<T>* l, Expression<T>* r, BinaryExpression<T>* ope):
 		left(l),right(r),op(ope)
 	{
+	}
+
+	template<class T>
+	BinaryExpression<T>* BinaryExpressionModel<T>::getOp() const
+	{
+		return op;
 	}
 
 	template<class T>
