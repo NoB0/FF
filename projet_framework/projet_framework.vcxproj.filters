@@ -102,17 +102,47 @@
     <ClInclude Include="fuzzy\CogDefuzz.h">
       <Filter>Fichiers d%27en-tête\fuzzy</Filter>
     </ClInclude>
+    <ClInclude Include="IsTrapeze.h">
+      <Filter>Fichiers d%27en-tête\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="IsTrapeze2.h">
+      <Filter>Fichiers d%27en-tête\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="Trapeze3.h">
+      <Filter>Fichiers d%27en-tête\fuzzy</Filter>
+    </ClInclude>
     <ClInclude Include="interpret\ExpressionFactory.h">
       <Filter>Fichiers d%27en-tête\interpret</Filter>
     </ClInclude>
-    <ClInclude Include="interpret\FuzzyFactory.h">
+    <ClInclude Include="interpret\BinaryShadowExpression.h">
       <Filter>Fichiers d%27en-tête\interpret</Filter>
     </ClInclude>
     <ClInclude Include="interpret\UnaryShadowExpression.h">
       <Filter>Fichiers d%27en-tête\interpret</Filter>
     </ClInclude>
-    <ClInclude Include="interpret\BinaryShadowExpression.h">
+    <ClInclude Include="interpret\FuzzyFactory.h">
       <Filter>Fichiers d%27en-tête\interpret</Filter>
+    </ClInclude>
+    <ClInclude Include="interpret\NullException.h">
+      <Filter>Fichiers d%27en-tête\interpret</Filter>
+    </ClInclude>
+    <ClInclude Include="interpret\NaryExpression.h">
+      <Filter>Fichiers d%27en-tête\interpret</Filter>
+    </ClInclude>
+    <ClInclude Include="interpret\NaryExpressionModel.h">
+      <Filter>Fichiers d%27en-tête\interpret</Filter>
+    </ClInclude>
+    <ClInclude Include="interpret\NaryShadowExpression.h">
+      <Filter>Fichiers d%27en-tête\interpret</Filter>
+    </ClInclude>
+    <ClInclude Include="fuzzy\SugenoDefuzz.h">
+      <Filter>Fichiers d%27en-tête\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="fuzzy\SugenoThen.h">
+      <Filter>Fichiers d%27en-tête\fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="fuzzy\SugenoConclusion.h">
+      <Filter>Fichiers d%27en-tête\fuzzy</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

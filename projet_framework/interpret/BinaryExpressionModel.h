@@ -3,6 +3,7 @@
 
 #include "Expression.h"
 #include "BinaryExpression.h"
+#include "NullException.h"
 
 namespace interpret {
 	template <class T>
@@ -10,8 +11,10 @@ namespace interpret {
 	public :
 		BinaryExpressionModel(Expression<T>*, Expression<T>*, BinaryExpression<T>*);
 
+		virtual BinaryExpression<T>* getOp() const;
 		virtual T evaluate() const;
 		virtual T evaluate(Expression<T>*, Expression<T>*) const;
+		virtual ~BinaryExpressionModel() {};
 	private:
 		Expression<T>* left;
 		Expression<T>* right;
@@ -25,16 +28,26 @@ namespace interpret {
 	}
 
 	template<class T>
-	T BinaryExpressionModel<T>::evaluate() const
+	BinaryExpression<T>* BinaryExpressionModel<T>::getOp() const
 	{
-		if (left != nullptr && right != nullptr)
-			return evaluate(left, right);
+		return op;
+	}
+
+	template<class T>
+	T BinaryExpressionModel<T>::evaluate() const  
+	{
+		if (left == NULL || right == NULL)
+			throw new NullException("null operand");
+			
+		return evaluate(left, right);
 	}
 	template<class T>
 	T BinaryExpressionModel<T>::evaluate(Expression<T>* l, Expression<T>* r) const
 	{
-		if (op != nullptr)
-			return op->evaluate(l, r);
+		if (op == NULL)
+			throw new NullException("null operator");
+
+		return op->evaluate(l, r);
 	}
 }
 

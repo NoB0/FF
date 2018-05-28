@@ -1,6 +1,7 @@
 #ifndef EVALUATOR_H
 #define EVALUATOR_H
 
+#include "../interpret/Expression.h"
 #include <vector>
 using namespace std;
 
@@ -8,20 +9,27 @@ namespace fuzzy {
 	template <class T>
 	class Evaluator {
 	public:
-		typedef pair<vector<T>, vector<T> > Shape;
-		static Shape buildShape(const T& min, const T& max, const T& step, const interpret::Expression&, const interpret::Expression&);
+		typedef pair<vector<T>, vector<T>> Shape;
+		static Shape buildShape(const T& min, const T& max, const T& step, interpret::ValueModel<T>*, interpret::Expression<T>*);
 		static ostream& printShape(ostream&, const Shape& s);
 	};
 
 	template<class T>
-	Shape Evaluator<T>::buildShape(const T & min, const T & max, const T & step, const interpret::Expression& exp, const interpret::Expression& func)
+	typename Evaluator<T>::Shape Evaluator<T>::buildShape(const T& min, const T& max, const T& step, interpret::ValueModel<T>* var, interpret::Expression<T>* func)
 	{
-		vector<T> x, y;
+		vector<T> x;
+		vector<T> y;
+
 		for (T i = min; i <= max; i += step)
 		{
-			y.push_back(func->evaluate(exp);
+			interpret::ValueModel<T>* temp = var;
+			temp->setValue(i);
 			x.push_back(i);
+			y.push_back(func->evaluate());
+			
+			//std::cout << std::endl << "y shape " << func->evaluate();
 		}
+
 		return Shape(x, y);
 	}
 

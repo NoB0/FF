@@ -1,11 +1,15 @@
 #ifndef ORPLUS_H
 #define ORPLUS_H
 
+#include "../interpret/Expression.h"
+#include "Or.h"
+
 namespace fuzzy {
 	template <class T>
 	class OrPlus : public Or<T> {
 	public:
 		virtual T evaluate(interpret::Expression<T>*, interpret::Expression<T>*) const;
+		virtual ~OrPlus() {};
 	};
 
 	template<class T>

@@ -1,5 +1,7 @@
 #ifndef THENMIN_H
 #define THENMIN_H
+
+#include "../interpret/Expression.h"
 #include "Then.h"
 
 namespace fuzzy {
@@ -7,6 +9,8 @@ namespace fuzzy {
 	class ThenMin : public Then<T> {
 	public:
 		virtual T evaluate(interpret::Expression<T>*, interpret::Expression<T>*) const;
+		virtual ~ThenMin() {};
+
 	};
 
 	template<class T>

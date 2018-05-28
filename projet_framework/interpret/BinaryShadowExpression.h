@@ -1,33 +1,52 @@
 #ifndef BINARY_SHADOW_EXPRESSION_H
 #define BINARY_SHADOW_EXPRESSION_H
 
+#include "Expression.h"
 #include "BinaryExpression.h"
+#include "NullException.h"
 
 namespace interpret {
 	template <class T>
 	class BinaryShadowExpression : public BinaryExpression<T> {
 	public:
-		BinaryShadowExpression(Expression<T>*);
+		BinaryShadowExpression() {};
+		BinaryShadowExpression(BinaryExpression<T>*);
+		~BinaryShadowExpression();
+
 		virtual T evaluate(Expression<T>*, Expression<T>*) const;
-		virtual void setTarget(Expression<T>*);
+		virtual void setTarget(BinaryExpression<T>*);
+		virtual BinaryExpression<T>* getTarget();
 	private:
-		UnaryExpression<T>* target;
+		BinaryExpression<T>* target;
 	};
+
 	template<class T>
-	BinaryShadowExpression<T>::BinaryShadowExpression(Expression<T>* t):
+	BinaryShadowExpression<T>::BinaryShadowExpression(BinaryExpression<T>* t):
 		target(t)
 	{
 	}
 	template<class T>
-	inline T BinaryShadowExpression<T>::evaluate(Expression<T>* l, Expression<T>* r) const
+	BinaryShadowExpression<T>::~BinaryShadowExpression()
 	{
-		if (target != null)
-			return target.evaluate(l, r);
+		delete target;
 	}
 	template<class T>
-	void BinaryShadowExpression<T>::setTarget(Expression<T>* o)
+	T BinaryShadowExpression<T>::evaluate(Expression<T>* l, Expression<T>* r) const
+	{
+		if (target == NULL)
+			throw new NullException("null target");
+
+		return target->evaluate(l, r);
+	}
+	template<class T>
+	void BinaryShadowExpression<T>::setTarget(BinaryExpression<T>* o)
 	{
 		target = o;
+	}
+	template<class T>
+	BinaryExpression<T>* BinaryShadowExpression<T>::getTarget()
+	{
+		return target;
 	}
 }
 
