@@ -1,0 +1,54 @@
+﻿  projet_framework.cpp
+c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\fuzzy\sugenothen.h(6): warning C4584: 'fuzzy::SugenoThen<T>' : la classe de base 'interpret::BinaryExpression<T>' est déjà une classe de base de 'fuzzy::Then<T>'
+  c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\fuzzy\sugenothen.h(15): note: voir la référence à l'instanciation de classe modèle 'fuzzy::SugenoThen<T>' en cours de compilation
+c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\interpret\fuzzyfactory.h(62): warning C4812: style de déclaration obsolète : utilisez 'interpret::FuzzyFactory<T>::FuzzyFactory' à la place
+c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\interpret\fuzzyfactory.h(74): warning C4812: style de déclaration obsolète : utilisez 'interpret::FuzzyFactory<T>::FuzzyFactory' à la place
+c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\fuzzy\istriangle.h(20): warning C4812: style de déclaration obsolète : utilisez 'fuzzy::IsTriangle<T>::IsTriangle' à la place
+c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\fuzzy\sugenothen.h(6): warning C4584: 'fuzzy::SugenoThen<float>' : la classe de base 'interpret::BinaryExpression<T>' est déjà une classe de base de 'fuzzy::Then<T>'
+          with
+          [
+              T=float
+          ]
+  c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\fuzzy\and.h(6): note: voir la déclaration de 'interpret::BinaryExpression<T>'
+          with
+          [
+              T=float
+          ]
+  c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\fuzzy\thenmin.h(9): note: voir la déclaration de 'fuzzy::Then<T>'
+          with
+          [
+              T=float
+          ]
+  c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\projet_framework.cpp(161): note: voir la référence à l'instanciation de classe modèle 'fuzzy::SugenoThen<float>' en cours de compilation
+c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\fuzzy\istriangle.h(20): warning C4812: style de déclaration obsolète : utilisez 'fuzzy::IsTriangle<int>::IsTriangle' à la place
+  c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\fuzzy\istriangle.h(20): note: pendant la compilation de la fonction membre '<Inconnu>' (classe <Inconnu>)
+  c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\projet_framework.cpp(80): note: voir la référence à l'instanciation de la fonction modèle 'fuzzy::IsTriangle<int>::IsTriangle(void)' en cours de compilation
+  c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\projet_framework.cpp(80): note: voir la référence à l'instanciation de classe modèle 'fuzzy::IsTriangle<int>' en cours de compilation
+c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\fuzzy\istriangle.h(20): warning C4812: style de déclaration obsolète : utilisez 'fuzzy::IsTriangle<float>::IsTriangle' à la place
+  c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\fuzzy\istriangle.h(20): note: pendant la compilation de la fonction membre '<Inconnu>' (classe <Inconnu>)
+  c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\projet_framework.cpp(103): note: voir la référence à l'instanciation de la fonction modèle 'fuzzy::IsTriangle<float>::IsTriangle(void)' en cours de compilation
+  c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\projet_framework.cpp(103): note: voir la référence à l'instanciation de classe modèle 'fuzzy::IsTriangle<float>' en cours de compilation
+c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\interpret\fuzzyfactory.h(74): warning C4812: style de déclaration obsolète : utilisez 'interpret::FuzzyFactory<float>::FuzzyFactory' à la place
+  c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\interpret\fuzzyfactory.h(75): note: pendant la compilation de la fonction membre '<Inconnu>' (classe <Inconnu>)
+  c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\projet_framework.cpp(172): note: voir la référence à l'instanciation de la fonction modèle 'interpret::FuzzyFactory<float>::FuzzyFactory(fuzzy::Not<T> *,fuzzy::And<T> *,fuzzy::Or<T> *,fuzzy::Then<T> *,fuzzy::Agg<T> *,fuzzy::SugenoDefuzz<T> *,fuzzy::SugenoConclusion<T> *)' en cours de compilation
+          with
+          [
+              T=float
+          ]
+  c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\projet_framework.cpp(107): note: voir la référence à l'instanciation de classe modèle 'interpret::FuzzyFactory<float>' en cours de compilation
+c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\interpret\fuzzyfactory.h(62): warning C4812: style de déclaration obsolète : utilisez 'interpret::FuzzyFactory<float>::FuzzyFactory' à la place
+  c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\interpret\fuzzyfactory.h(63): note: pendant la compilation de la fonction membre '<Inconnu>' (classe <Inconnu>)
+  c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\projet_framework.cpp(107): note: voir la référence à l'instanciation de la fonction modèle 'interpret::FuzzyFactory<float>::FuzzyFactory(fuzzy::And<T> *,fuzzy::Or<T> *,fuzzy::Agg<T> *,fuzzy::MamdaniDefuzz<T> *,fuzzy::Not<T> *,fuzzy::Then<T> *,fuzzy::Is<T> *)' en cours de compilation
+          with
+          [
+              T=float
+          ]
+c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\fuzzy\istriangle.h(42): warning C4715: 'fuzzy::IsTriangle<int>::evaluate' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\fuzzy\istrapez.h(42): warning C4715: 'fuzzy::IsTrapez<int>::evaluate' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\fuzzy\istrapez1.h(42): warning C4715: 'fuzzy::IsTrapez1<int>::evaluate' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\fuzzy\istrapez2.h(42): warning C4715: 'fuzzy::IsTrapez2<int>::evaluate' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\fuzzy\istriangle.h(42): warning C4715: 'fuzzy::IsTriangle<float>::evaluate' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\fuzzy\istrapez.h(42): warning C4715: 'fuzzy::IsTrapez<float>::evaluate' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\fuzzy\istrapez1.h(42): warning C4715: 'fuzzy::IsTrapez1<float>::evaluate' : les chemins de contrôle ne retournent pas tous une valeur
+c:\users\hp\downloads\fuzzyframework-master (1)\fuzzyframework-master\projet_framework\fuzzy\istrapez2.h(42): warning C4715: 'fuzzy::IsTrapez2<float>::evaluate' : les chemins de contrôle ne retournent pas tous une valeur
+  projet_framework.vcxproj -> C:\Users\HP\Downloads\FuzzyFramework-master (1)\FuzzyFramework-master\x64\Debug\projet_framework.exe
